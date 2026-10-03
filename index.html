@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime TV Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="shade"></div>
+
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <div class="brand">ANIME <span>TV</span></div>
+        <div class="subtitle">Your personal browser homepage</div>
+      </div>
+      <div class="clock" id="clock">--:--</div>
+    </header>
+
+    <section class="hero">
+      <h1>Welcome, Shinobi.</h1>
+      <p>Select a website using your remote. Use ↑ ↓ ← → and ENTER.</p>
+
+      <div class="search-wrap">
+        <input id="search" type="text" placeholder="Search the web..." autocomplete="off">
+        <button id="searchBtn" class="search-btn">SEARCH</button>
+      </div>
+    </section>
+
+    <section class="sites" aria-label="Websites">
+      <a class="site-card" href="https://animesky.app" target="_blank">
+        <div class="icon">A</div>
+        <div><strong>AnimeSky</strong><small>animesky.app</small></div>
+      </a>
+
+      <a class="site-card" href="https://pvrplay.site" target="_blank">
+        <div class="icon">P</div>
+        <div><strong>PVR Play</strong><small>pvrplay.site</small></div>
+      </a>
+
+      <a class="site-card" href="https://moviesrulez.xyz" target="_blank">
+        <div class="icon">M</div>
+        <div><strong>MoviesRulez</strong><small>moviesrulez.xyz</small></div>
+      </a>
+
+      <a class="site-card" href="https://cinevo.nl" target="_blank">
+        <div class="icon">C</div>
+        <div><strong>Cinevo</strong><small>cinevo.nl</small></div>
+      </a>
+
+      <!-- CUSTOM SLOTS: replace the # with your own URL and edit the name. -->
+      <a class="site-card custom" href="#" data-placeholder="true">
+        <div class="icon">+</div>
+        <div><strong>Your Website</strong><small>Add your own link</small></div>
+      </a>
+
+      <a class="site-card custom" href="#" data-placeholder="true">
+        <div class="icon">+</div>
+        <div><strong>Your Website</strong><small>Add your own link</small></div>
+      </a>
+
+      <a class="site-card custom" href="#" data-placeholder="true">
+        <div class="icon">+</div>
+        <div><strong>Your Website</strong><small>Add your own link</small></div>
+      </a>
+
+      <a class="site-card custom" href="#" data-placeholder="true">
+        <div class="icon">+</div>
+        <div><strong>Your Website</strong><small>Add your own link</small></div>
+      </a>
+    </section>
+
+    <footer>
+      <button id="changeBg" class="footer-btn">CHANGE BACKGROUND</button>
+      <span>Background changes automatically on every page load.</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
